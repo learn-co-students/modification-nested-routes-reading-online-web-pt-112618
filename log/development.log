@@ -3742,3 +3742,666 @@ Processing by PostsController#show as HTML
   [1m[35mAuthor Load (0.1ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 2]]
   Rendered posts/show.html.erb within layouts/application (0.7ms)
 Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-05-18 00:57:13.354280"], ["updated_at", "2019-05-18 00:57:13.354280"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stephen King"], ["genre", "Romance"], ["bio", "Writes a lot of scary things."], ["created_at", "2019-05-18 00:57:18.533910"], ["updated_at", "2019-05-18 00:57:18.533910"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ariana Huffington"], ["genre", "Comedy"], ["bio", "Up and comer. One to watch."], ["created_at", "2019-05-18 00:57:18.536523"], ["updated_at", "2019-05-18 00:57:18.536523"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Horse Ebooks"], ["genre", "?????"], ["bio", "Eclectic."], ["created_at", "2019-05-18 00:57:18.538883"], ["updated_at", "2019-05-18 00:57:18.538883"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Something About Democrats"], ["description", "  Last night I dreamt there is more to life than to bully friends.\n  What has that got to do with Democrats, you probably wonder...\n  The answer is here. Right here. Back in school my hair was silly.\n  Nevermind about the details, but... In a nut-shell: And still,\n  it was strange. Using Google, I found a 12-sided dice.\n  Which would be nothing special but...\n"], ["created_at", "2019-05-18 00:57:18.547285"], ["updated_at", "2019-05-18 00:57:18.547285"], ["author_id", 4]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Spam Spam Spam"], ["description", "  It occurred to me that no matter what cards you are dealt,\n  you need to enjoy the small joys. How is this related to Spam, you ask.\n  Fair enough. OK, I will tell you something here now...\n  Sometime around last year I loved movies. Yeah, just what it sounds like.\n  In a nut-shell: And still, it was strange. I collided with the powers of a my computer,\n  broken and gray. And here's why this matters...\n"], ["created_at", "2019-05-18 00:57:18.550148"], ["updated_at", "2019-05-18 00:57:18.550148"], ["author_id", 5]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Links! Click Links!"], ["description", "  Last night I dreamt we simply need to realize to be so competitive.\n  Does the responsibility lie with Links, you probably wonder...\n  The answer is here. Right here. About the time I broke up with my\n  ex I was totally into music. Whatever. So that's that.\n  But something wasn't right. I stumbled upon a giant banana.\n"], ["created_at", "2019-05-18 00:57:18.552948"], ["updated_at", "2019-05-18 00:57:18.552948"], ["author_id", 6]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "created_at" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["created_at", "2019-05-17 00:00:00"], ["updated_at", "2019-05-18 00:57:18.555794"], ["id", 16]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/authors" for ::1 at 2019-05-17 20:57:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 546ms (Views: 533.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/authors/5" for ::1 at 2019-05-17 20:57:35 -0400
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 5]]
+  Rendered authors/show.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 88ms (Views: 70.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/authors/5/posts/new" for ::1 at 2019-05-17 20:57:36 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"5"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (31.1ms)
+  Rendered posts/new.html.erb within layouts/application (34.4ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fe7d2ec1758>:0x00007fe7d58c2bd8>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3:   <%= f.text_field :title %><br>
+    4: 
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___2322114866236474773_70316820847160'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb__80054601574049243_70316826432900'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.1ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___200522765441275723_70316850614620 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.1ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (152.3ms)
+Started GET "/authors/5/posts/new" for ::1 at 2019-05-17 20:58:30 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"5"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (21.7ms)
+  Rendered posts/new.html.erb within layouts/application (24.1ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fe7d2ec1758>:0x00007fe7d69991f0>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3:   <%= f.text_field :title %><br>
+    4: 
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___2322114866236474773_70316821814900'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb__80054601574049243_70316857283760'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.8ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___200522765441275723_70316825157460 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.1ms)
+Started GET "/authors/5/posts/new" for ::1 at 2019-05-17 20:58:48 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"5"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (20.9ms)
+  Rendered posts/new.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fe7d2ec1758>:0x00007fe7d6efa950>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___2322114866236474773_70316860080760'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb__80054601574049243_70316860102980'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.1ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___200522765441275723_70316857830160 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.9ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.0ms)
+Started GET "/authors/5/posts/new" for ::1 at 2019-05-17 20:59:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"5"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (18.4ms)
+  Rendered posts/new.html.erb within layouts/application (22.2ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fa85628cb10>:0x00007fa852bc1658>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___4092441948211061157_70180488313640'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb___4373715676225938677_70180488375400'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.3ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1919530659364217441_70180489396000 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.7ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.4ms)
+Started GET "/authors/5/posts/new" for ::1 at 2019-05-17 20:59:28 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"5"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (28.3ms)
+  Rendered posts/new.html.erb within layouts/application (31.4ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fa852bd3830>:0x00007fa852bd1f30>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___4092441948211061157_70180488473200'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb___4373715676225938677_70180488487600'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1919530659364217441_70180459958660 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.8ms)
+Started GET "/authors" for ::1 at 2019-05-17 20:59:39 -0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 254ms (Views: 241.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/authors/6" for ::1 at 2019-05-17 20:59:40 -0400
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 6]]
+  Rendered authors/show.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 47ms (Views: 36.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/authors/6/posts/new" for ::1 at 2019-05-17 20:59:41 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"6"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (20.9ms)
+  Rendered posts/new.html.erb within layouts/application (23.3ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fa852bd3830>:0x00007fa853b45890>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___4092441948211061157_70180506019720'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb___4373715676225938677_70180467781840'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1919530659364217441_70180506686440 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.8ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.7ms)
+Started GET "/authors/6/posts/new" for ::1 at 2019-05-17 21:00:25 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"6"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (17.9ms)
+  Rendered posts/new.html.erb within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fa852bd3830>:0x00007fa8585d6918>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___4092441948211061157_70180506889940'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb___4373715676225938677_70180506876180'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.1ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1919530659364217441_70180509718080 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.2ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.8ms)
+Started GET "/authors/6/posts/new" for ::1 at 2019-05-17 21:00:51 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"6"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (18.3ms)
+  Rendered posts/new.html.erb within layouts/application (20.1ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fa8589c01f0>:0x00007fa8589bb060>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___4092441948211061157_70180508894700'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb___4373715676225938677_70180508927220'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.6ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1919530659364217441_70180507356500 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.8ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.8ms)
+Started GET "/authors/6/posts/new" for ::1 at 2019-05-17 21:01:05 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"6"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (19.0ms)
+  Rendered posts/new.html.erb within layouts/application (20.8ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fa858571928>:0x00007fa8585707d0>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___4092441948211061157_70180506554820'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb___4373715676225938677_70180506669200'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.6ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1919530659364217441_70180503934180 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.9ms)
+Started GET "/authors/6/posts/new" for ::1 at 2019-05-17 21:01:24 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"6"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (23.1ms)
+  Rendered posts/new.html.erb within layouts/application (26.3ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fa853a35d88>:0x00007fa853a2f410>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___4092441948211061157_70180467145680'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb___4373715676225938677_70180467226860'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1919530659364217441_70180508823580 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.0ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.7ms)
+Started GET "/authors/6/posts/new" for ::1 at 2019-05-17 21:01:25 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"6"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (18.7ms)
+  Rendered posts/new.html.erb within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fa853a35d88>:0x00007fa858497d18>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___4092441948211061157_70180506201160'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb___4373715676225938677_70180506231620'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.3ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1919530659364217441_70180506752880 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.7ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.6ms)
+Started GET "/authors" for ::1 at 2019-05-17 21:01:28 -0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 41ms (Views: 34.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/authors/4" for ::1 at 2019-05-17 21:01:29 -0400
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 4]]
+  Rendered authors/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 39ms (Views: 33.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/authors/4/posts/new" for ::1 at 2019-05-17 21:01:30 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"4"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (23.7ms)
+  Rendered posts/new.html.erb within layouts/application (26.9ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `posts_path' for #<#<Class:0x00007fa853a35d88>:0x00007fa858bda940>):
+    1: <%= form_for(@post) do |f| %>
+    2:   <label>Post title:</label><br>
+    3: 
+    4:   <%= f.hidden_field :author_id %>
+  
+app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___4092441948211061157_70180510007860'
+app/views/posts/new.html.erb:1:in `_app_views_posts_new_html_erb___4373715676225938677_70180510030120'
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.6ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_whitnyedwards__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1919530659364217441_70180459426180 at /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.9ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/whitnyedwards/.rvm/gems/ruby-2.5.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.3ms)
